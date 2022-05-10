@@ -5,7 +5,6 @@
 
 template<typename T>
 class TPQueue {
-
  private:
   struct ITEM {
     T value;
