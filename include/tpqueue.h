@@ -5,14 +5,14 @@
 
 template<typename T>
 class TPQueue {
-  // реализация шаблона очереди с приоритетом на связанном списке
+
  private:
   struct ITEM {
     T value;
-    ITEM* next, * prev;  
+    ITEM* next, * prev;
   };
   ITEM* head, * tail;
-  TPQueue::ITEM* create(const T& value) { 
+  TPQueue::ITEM* create(const T& value) {
     ITEM* item = new ITEM;
     item->value = value;
     item->next = item->prev = nullptr;
