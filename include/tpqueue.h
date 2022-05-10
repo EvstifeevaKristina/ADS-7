@@ -9,16 +9,16 @@ class TPQueue {
  private:
   struct ITEM {
     T value;
-    ITEM* next, * prev;   
+    ITEM* next, * prev;  
   };
-  ITEM* head, * tail; 
-  TPQueue::ITEM* create(const T& value) {  
+  ITEM* head, * tail;
+  TPQueue::ITEM* create(const T& value) { 
     ITEM* item = new ITEM;
     item->value = value;
     item->next = item->prev = nullptr;
     return item;
   }
-  
+
  public:
   TPQueue() : head(nullptr), tail(nullptr) {}
   ~TPQueue() {
@@ -59,8 +59,8 @@ class TPQueue {
     if (!head)
       tail = nullptr;
     return value;
-  } 
-}; 
+  }
+};
 
 struct SYM {
   char ch;
